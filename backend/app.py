@@ -24,6 +24,27 @@ app = Flask(
 )
 CORS(app)
 
+_db_initialized = False
+
+def ensure_db_initialized():
+    global _db_initialized
+    if _db_initialized:
+        return
+    try:
+        db = get_db()
+        cols = db.list_collection_names()
+        if "patients" not in cols or db.patients.count_documents({}) == 0:
+            print("PulseCare AI: Initializing schema rules and seeding initial clinical database...")
+            seed_all()
+        _db_initialized = True
+    except Exception as e:
+        print(f"Notice: Database auto-initialization check skipped ({e})")
+
+@app.before_request
+def before_request_hook():
+    if not request.path.startswith("/static"):
+        ensure_db_initialized()
+
 # -------------------------------------------------------------
 # Web Page Route
 # -------------------------------------------------------------

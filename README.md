@@ -5,6 +5,7 @@
 [![Flask](https://img.shields.io/badge/Flask-3.1.3-black.svg?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/negineeraj331/pulsecare-ai)
 
 > **PulseCare AI** is an intelligent emergency healthcare and hospital resource telemetry system engineered with **MongoDB 7.0**, **PyMongo**, and **Flask**. It delivers real-time clinical anomaly detection, atomic bed and ventilator management, engine-level `$jsonSchema` integrity, and multi-stream hospital command analytics (`$facet`).
 
