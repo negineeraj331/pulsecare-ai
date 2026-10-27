@@ -5,7 +5,6 @@
 [![Flask](https://img.shields.io/badge/Flask-3.1.3-black.svg?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/negineeraj331/pulsecare-ai)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-pulsecare--ai--twh4.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://pulsecare-ai-twh4.onrender.com/)
 
 > 🚀 **Live Production Deployment**: **[https://pulsecare-ai-twh4.onrender.com/](https://pulsecare-ai-twh4.onrender.com/)**  
@@ -121,7 +120,7 @@ PulseCare AI is actively deployed in the cloud and available for testing:
    - `MONGO_URI`: `mongodb+srv://<username>:<password>@cluster.mongodb.net/pulsecare_hospital_db?retryWrites=true&w=majority`
    - `FLASK_DEBUG`: `0`
 
-*(Or click the **Deploy to Render** button above or use the provided `render.yaml` for automatic blueprint deployment)*
+*(Or use the provided `render.yaml` for automatic blueprint deployment)*
 
 ---
 

@@ -5,18 +5,26 @@ Run this script in terminal to demonstrate live CRUD, Validation rejection,
 and Aggregation queries directly.
 """
 
-import sys
 import os
+import sys
 import json
 from datetime import datetime, timezone
 
 # Add backend directory to sys.path
-sys.path.append(os.path.join(os.path.dirname(__file__), "backend"))
+backend_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend")
+if backend_dir not in sys.path:
+    sys.path.insert(0, backend_dir)
 
-from db import get_db, serialize_mongo
-import crud
-import aggregations
-from seed_data import seed_all
+try:
+    from backend.db import serialize_mongo
+    from backend import crud
+    from backend import aggregations
+    from backend.seed_data import seed_all
+except ImportError:
+    from db import serialize_mongo  # type: ignore
+    import crud  # type: ignore
+    import aggregations  # type: ignore
+    from seed_data import seed_all  # type: ignore
 
 # ANSI Terminal Colors
 CYAN = "\033[96m"
