@@ -4,3 +4,5 @@ pymongo==4.19.0
 dnspython==2.9.0
 gunicorn==23.0.0
 python-docx==1.2.0
+python-dotenv==1.2.4
+

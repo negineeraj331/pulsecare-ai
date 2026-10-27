@@ -8,9 +8,13 @@ from pymongo.errors import CollectionInvalid, OperationFailure
 import os
 from datetime import datetime
 from bson import ObjectId
+from dotenv import load_dotenv
+
+# Load .env file automatically
+load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://127.0.0.1:27017/")
-DB_NAME = "pulsecare_hospital_db"
+DB_NAME = os.getenv("DB_NAME", "pulsecare_hospital_db")
 
 def get_client():
     return MongoClient(MONGO_URI, serverSelectionTimeoutMS=3000)
