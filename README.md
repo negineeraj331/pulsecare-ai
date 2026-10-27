@@ -6,7 +6,11 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/negineeraj331/pulsecare-ai)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-pulsecare--ai--twh4.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://pulsecare-ai-twh4.onrender.com/)
 
+> 🚀 **Live Production Deployment**: **[https://pulsecare-ai-twh4.onrender.com/](https://pulsecare-ai-twh4.onrender.com/)**  
+> *Experience the live PulseCare AI Clinical Command Center with real-time telemetry anomaly monitoring and aggregation pipelines running on Render.*
+> 
 > **PulseCare AI** is an intelligent emergency healthcare and hospital resource telemetry system engineered with **MongoDB 7.0**, **PyMongo**, and **Flask**. It delivers real-time clinical anomaly detection, atomic bed and ventilator management, engine-level `$jsonSchema` integrity, and multi-stream hospital command analytics (`$facet`).
 
 ---
@@ -98,7 +102,14 @@ The web dashboard is available at **[http://127.0.0.1:5000](http://127.0.0.1:500
 
 ## ☁️ Cloud Deployment
 
-### Deploy to Render (Free Tier)
+### 🌐 Live Production Application
+PulseCare AI is actively deployed in the cloud and available for testing:
+- **Production URL**: **[https://pulsecare-ai-twh4.onrender.com/](https://pulsecare-ai-twh4.onrender.com/)**
+- **Hosting Platform**: [Render](https://render.com/) (Web Service with Gunicorn WSGI)
+- **Database Engine**: MongoDB Atlas (Cloud Cluster 7.0+)
+- **Operational Status**: 🟢 Active & Serving Live Requests
+
+### Deploy Your Own Instance on Render
 1. Fork or push this repository to GitHub.
 2. Sign in to [Render](https://render.com/).
 3. Create a **New Web Service** connected to your GitHub repository.
@@ -110,7 +121,7 @@ The web dashboard is available at **[http://127.0.0.1:5000](http://127.0.0.1:500
    - `MONGO_URI`: `mongodb+srv://<username>:<password>@cluster.mongodb.net/pulsecare_hospital_db?retryWrites=true&w=majority`
    - `FLASK_DEBUG`: `0`
 
-*(Or use the provided `render.yaml` for automatic blueprint deployment)*
+*(Or click the **Deploy to Render** button above or use the provided `render.yaml` for automatic blueprint deployment)*
 
 ---
 

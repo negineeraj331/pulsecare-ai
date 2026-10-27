@@ -15,6 +15,8 @@
 # PulseCare AI: Intelligent Emergency Healthcare & Clinical Resource Telemetry System
 **Author:** Individual Project Submission  
 **Environment:** MongoDB 7.0.26 Server, Python 3.13.2, PyMongo 4.19.0, Flask REST API, Modern Clinical Command Center UI  
+**GitHub Repository:** [https://github.com/negineeraj331/pulsecare-ai](https://github.com/negineeraj331/pulsecare-ai)  
+**Live Production Deployment:** [https://pulsecare-ai-twh4.onrender.com/](https://pulsecare-ai-twh4.onrender.com/)  
 
 ---
 
